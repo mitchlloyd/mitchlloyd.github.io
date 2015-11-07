@@ -7,7 +7,7 @@ permalink: were-still-programming-3
 ---
 
 Why are people so confused about programming?
-=============================================
+---------------------------------------------
 
 I'd like to propose a few hypothesis for why people misunderstand programming.
 
@@ -59,7 +59,7 @@ programmer "codes" a program is like saying that Walter Isaacson "coded" Steve
 Job's life into a book.
 
 The Ethos of the Argument
-=========================
+-------------------------
 
 I've challenged the premise that the demand for programming (or "coding") will
 decrease due to new user interfaces or advances in computing. In summary,
@@ -103,4 +103,3 @@ can adapt in a couple weeks vs a couple years will make or break a company.
 
 There is hope, and as fun and wacky as new tech salaries are, we'll have
 balance. The next phase for software development...
-

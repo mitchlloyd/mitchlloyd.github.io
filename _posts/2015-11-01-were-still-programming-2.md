@@ -229,7 +229,3 @@ providers, a relationship where the hiring company dreams of a product and then
 expects programmers to translate these dreams into "code". More successful
 project are built in partnership with developers with the understanding that
 ideas are cheap and execution is critical.
-
------------------
-
-Read [part 3 of this series]({{ page.next.url }})

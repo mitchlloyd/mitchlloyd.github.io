@@ -1,0 +1,53 @@
+.text-large {
+  font-size: $large-font-size;
+}
+
+.text-base {
+  font-size: $base-font-size;
+}
+
+.text-small {
+  font-size: $small-font-size;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-thin {
+  font-weight: 300;
+}
+
+.block {
+  display: block
+}
+
+.list-unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+// `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+.mr- {
+  margin-right: $spacing-unit / 2;
+}
+
+.mb {
+  margin-bottom: $spacing-unit;
+}
+
+.mb\+ {
+  margin-bottom: $spacing-unit * 2;
+}
+
+.mt\+ {
+  margin-top: $spacing-unit * 2;
+}
+
+.color-subtle {
+  color: $grey-color;
+}

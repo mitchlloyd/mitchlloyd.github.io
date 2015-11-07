@@ -10,9 +10,9 @@ title: mitchlloyd
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://mitchlloyd.com" # the base hostname & protocol for your site
+twitter_username: too_mitch
+github_username:  mitchlloyd
 
 # Build settings
 markdown: kramdown
