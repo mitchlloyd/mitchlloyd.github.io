@@ -1,13 +1,11 @@
 ---
 layout: post
-title:  "We're Still Programing Part 2: Can't Someone Else Do It?"
+title:  "Still Programing Part 2: Can't Someone Else Do It?"
 date:   2015-11-01 19:28:35 -0800
-categories: jekyll update
-permalink: were-still-programming-2
 ---
 
 We've covered some common thoughts about eliminating programmers by making their
-jobs easy enough for anyone to do in [part 1]({% post_url 2015-11-01-were-still-programming-1 %}).
+jobs easy enough for anyone to do in [part 1]({{page.previous.url}}).
 Now we need to tackle the question of whether a computers will learn to program
 and eliminate programming jobs.
 

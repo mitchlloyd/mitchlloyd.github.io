@@ -1,9 +1,7 @@
 ---
 layout: post
-title:  "We're Still Programing Part 3: Why the Confusion?"
+title:  "Still Programing Part 3: Why the Confusion?"
 date:   2015-11-01 19:28:35 -0800
-categories: jekyll update
-permalink: were-still-programming-3
 ---
 
 Why are people so confused about programming?

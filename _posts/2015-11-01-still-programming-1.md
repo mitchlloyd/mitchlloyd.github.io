@@ -1,10 +1,7 @@
 ---
 layout: post
-title:  "We're Still Programing Part 1: Making Programming Easy Enough for Everyone"
+title:  "Still Programing Part 1: Making Programming Easy Enough for Everyone"
 date:   2015-11-01 19:28:35 -0800
-categories: jekyll update
-permalink: were-still-programming-1
-suggested_post: were-still-programming-2
 ---
 
 When I was a junior in high-school, adults asked me what I wanted to do for a
