@@ -1,8 +1,13 @@
 .post-content {
   margin-bottom: $spacing-unit;
 
+  p, pre {
+    max-width: 38rem;
+  }
+
   h2 {
     font-size: 32px;
+    line-height: 1.2;
 
     @include media-query($on-laptop) {
       font-size: 28px;
