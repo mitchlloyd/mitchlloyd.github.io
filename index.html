@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <p>Hi my name is Mitch Lloyd</p>
+
+  <p>
+    You can <a href="http://twitter.com/too_mitch">see me tweet</a>,
+    <a href="http://github.com/mitchlloyd">watch me code</a>,
+    and read things I write here.
+  </p>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+
+<div id="global_status" class="unregistered">
+  <span class="unregistered"></span>
+</div>
