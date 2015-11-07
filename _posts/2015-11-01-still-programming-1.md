@@ -5,35 +5,34 @@ date:   2015-11-01 19:28:35 -0800
 ---
 
 When I was a junior in high-school, adults asked me what I wanted to do for a
-living. I spent my free time making music and programming computer game but my
+living. I spent my free time making music and programming computer games but my
 parents were not satisfied with either of these activities as career
 aspirations.
 
 Programming, according to the wisdom of 1998, would soon to be outsourced to
 countries with emerging economies like India, China and Russia.  Programing was
-was a poor choice of profession for someone living in the United States, I was
-told.
+was a poor choice of profession for someone living in the United States.
 
 "It really is very mundane," a teacher told me. "You could be someone that
 _manages_ developers, but you don't want to actually be writing code."
 
 In this series of posts I'll describe the nature of computer programming to
-people that may have only a passing interest in it.  I want to explain to why
-programming will not be cheaply outsourced, automated away, or suddenly become
-obsolete.
+people that have an interest in it, but not extensive experience.  I want to
+explain to why programming will not be cheaply outsourced, automated away, or
+suddenly become obsolete.
 
 Programming in Plain English
 ----------------------------
 
-Throughout the short history of programming people have tried to eliminate
-programming by eliminating the esoteric code used for programming. Instead of
-programming in Java, C++, Fortran, or Python why don't we program in English?
+Throughout it's short history, people tried to eliminate programming by
+eliminating the esoteric code used for programming. Instead of programming in
+Java, C++, Fortran, or Python why don't we program in English?
 
-Programming languages are not intended to obscure what programmers are doing,
-they are earnest attempts let humans express solutions as clearly and simply as
-possible.  If programmers could program effectively in in their spoken languages
-they would, but unfortunately, spoken language is to verbose and ambiguous to
-effectively describe technical problems.
+Programming languages are not intended to obscure what programmers are doing.
+They are earnest attempts to let humans express solutions as clearly and simply
+as possible.  If programmers could program effectively in in their spoken
+languages they would. Unfortunately, spoken language is to verbose and
+ambiguous to effectively describe technical problems.
 
 Here is a programming expression in COBOL, a language designed to read like English:
 
@@ -52,13 +51,11 @@ You probably already understand that code because you likely have some
 experience with math notation. Mathematicians also uses symbolic language to
 express problems and solutions.
 
-Here is a simple math problem expressed in English.
+Here is a math problem expressed in English.
 
-```
-Take one and two and add them together. Now take ten and subtract eight from it.
-Take the first result from adding one and two and multiply it by the second
-result that you got from subtracting ten from eight.
-```
+> Take one and two and add them together. Now take ten and subtract eight from it.
+> Take the first result from adding one and two and multiply it by the second
+> result that you got from subtracting ten from eight.
 
 Now here is that same problem in many programming languages:
 
@@ -75,7 +72,6 @@ than English. This is why they exist.
 
 Programming With Visual Tools
 -----------------------------
-
 Another argument for the demise of programming is that an easy-to-use visual
 tool will make the job simple enough for everyone to do, eliminating programming
 as a profession.
@@ -84,7 +80,7 @@ Modern programmers already use many visual tools as they program. They have
 tests that show them alerts when something is wrong.  They have text editors
 that complete code for them and have sophisticated ways of showing errors as
 they type. There are tools like Xcode and Visual Studio Code that have drag and
-drop interfaces.  There are tools that graph code changes to an evolving
+drop interfaces.  There are applications that graph code changes to an evolving
 programming project.  Look at a programmer's screen as they work and you'll see
 a myriad of colors, signals, shapes, and diagrams giving them information.
 
@@ -100,25 +96,26 @@ them one at a time, but it's well worth their time to learn to type instead.
 
 We _have_ created programming interfaces for casual users -- most notably
 spreadsheet programs like Excel. With just a little training, a user can
-process large amounts of data in interesting ways and even create their own
-user interfaces.
+transform data in interesting ways and even create their own user interfaces.
 
-Excel is excellent at processing data in ad hoc ways. A single spreadsheet user
-can perform the work of a thousand or more that lack the same tools. However,
-to continue to tackle bigger problem users will spend years learning learning
-to use pivot tables, formulas, and eventually the Basic programming language.
+A single spreadsheet user can perform the work of a thousand or more that lack
+the same tool. However, to continue tackling bigger problems users must spend
+years learning learning to use pivot tables, formulas, and eventually the Basic
+programming language.  Although spreadsheet applications are optimized for
+simple use cases, advanced users can program with them.
 
 The means by which programmers input their ideas into a computer is completely
-incidental to the task of programming. Most programmers type and use mouses. A
-programmer with hand disabilities may use their feet to augment their input.
-We have programs that can translate voice into text. No form of input is any more or less indicative of programming.
+incidental to the task of programming.  Most programmers type and use mouses. A
+programmer with hand disabilities may use their feet to augment their input and
+we have applications that can translate voice into text. No form of input is any
+more or less emblematic of programming.
 
-If you want some thoughtful discussion about the futures of human-computer
+If you want some thoughtful discussion about the future of human-computer
 interaction for programmers I suggest you read and watch the work of [Bret
 Victor](worrydream.com). Specifically [Seeing
 Spaces](http://worrydream.com/SeeingSpaces/) is relevant to this discussion.
 But no matter what medium we use to build programs, it is the ideas and logic
-that we describe with that medium that have value.
+that we describe -- not the medium -- that have value.
 
 Typing words into a computer is as incidental to programming as talking on the
-phone is for a CEO. It does not define the job they perform.
+phone is for a CEO. Neither activity defines the job.

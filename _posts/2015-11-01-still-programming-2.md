@@ -6,7 +6,7 @@ date:   2015-11-01 19:28:35 -0800
 
 We've covered some common thoughts about eliminating programmers by making their
 jobs easy enough for anyone to do in [part 1]({{page.previous.url}}).
-Now we need to tackle the question of whether a computers will learn to program
+Now we need to tackle the question of whether computers will learn to program
 and eliminate programming jobs.
 
 We Don't Need Computers That Can Program
@@ -15,7 +15,7 @@ We Don't Need Computers That Can Program
 First you should know that we already have software that can write code.  Today
 programmers write specifications in languages that they prefer and then
 computers write the instructions that they will later execute. That's called
-["compiling"](https://en.wikipedia.org/wiki/Compiler). We even have compilers
+[compiling](https://en.wikipedia.org/wiki/Compiler). We even have compilers
 that can watch how code is being used as it runs and rewrite it on the fly to
 perform better. We also have programs that can write human-readable code (this
 is called code generation), but that doesn't tend to be very useful -- it just
@@ -27,8 +27,10 @@ something, we never need to tell it again.
 
 Let's talk through an example. Your boss says, "I have a file with everyone's
 birthday in it. I want you to make a program that sends everyone in the company
-an email on their birthday." By the end of the day you have the program ready for
-your boss and it looks something like this:
+an email on their birthday."
+
+By the end of the day you have the program ready for your boss and it looks
+something like this:
 
 ``` ruby
 def send_birthday_greetings(filename)
@@ -64,50 +66,54 @@ represents an anniversary and the message to send you users.
 We just made our program more abstract and flexible. We can even create a
 user interface for our boss so that if she wants to send out a message on
 everyone's pet's birthday she can do that without even talking to us.
-We've programmed our job out of existence.
+
+If our job was to send birthday greetings, we're unemployed. If our job was to
+write programs that send messages on certain days, we've programmed our job out
+of existence.
 
 As programmers we avoid writing repetitive code or solving the same problem
 twice.  We take repetitive tasks and make it possible to do them over and over
 at nearly zero cost.
 
 Beyond eliminating repetition, programmers work to eliminate "incidental
-complexity" or the work that is not essential to the problems at hand. There are
-committees of programmers that create standards and collaborate to enhance
-platforms so that programmers can stop dealing with trivial technical problems
-and focus on the fundamental complexity of the problems at hand.
+complexity" or the work that is not essential to the problems at hand.
+Committees of programmers create standards and enhance platforms so that
+programmers can stop dealing with trivial technical problems and focus on the
+fundamental complexity of the problems at hand.
 
-For instance, front-end developers used to spend hours creating images for
-rounded corners on the web and now this can be accomplished in with one line of
-CSS code.  When programmers recognize problems that are solved over and over,
-they create reusable libraries and frameworks that can radically improve the
-speed and reliability of software construction. Programmers are so fanatical
+For instance, front-end developers used to spend hours creating images to
+produce rounded corners on the web and now this can be accomplished in with one
+line of CSS code. When programmers recognize problems that are solved over and
+over, they create reusable libraries and frameworks that can radically improve
+the speed and reliability of software construction. Programmers are so fanatical
 about improving the sate of their work, that they often join world-wide
-communities of volunteers to build and maintain these tools.
+communities of volunteers to build and maintain software that eliminates
+programming work.
 
 If programming keeps getting "easier" then why isn't there less demand for
 software developers? Because as creating software gets more efficient, we find
 new uses for it and tackle new problems that were too hard and too expensive to
 do before.  This is why we can have autonomous vehicles and too many online
-social networks.  This is why we had PAC-Man in 1980 and have Destiny in 2015.
+social networks.
 
 If Computers Could Program
 --------------------------
 
 So the very nature of programming is that it eliminates repetitive work. Let's
 focus back on the question: Can we teach a computer to program? Can a computer
-could take some very basic input from a human and create a new program as a
-human programmer would?
+take some very basic input from a human and create a new program as a human
+programmer would?
 
 Here's our thought experiment: Tom wants to start a business selling books, so
 he goes to a computer and says: "Build a program to sell books." The computer
 recognizes this command and, with the precision of a team of master programmers,
 creates and deploys a new book selling application in one second.  Tom logs into
 his new online store.  There he needs to fill out some information.  He needs
-his business's bank information. What books is he selling? He'll need the ISBN
-numbers for those, and are these physical books or can people download them.
-What shipping providers are they going to use?
+his business's bank information. He needs some way to tell the application what
+books is he selling and whether they are physical or can be downloaded.  What
+shipping providers are they going to use?
 
-This is getting a little involved, but this isn't programming right? This is
+This is getting a little involved, but this isn't programming, right? This is
 just using, and configuring a program.
 
 My point is this: Even if we could teach a computer to write a program like this
@@ -138,12 +144,12 @@ So if humans are going to continue programming for now, why can't we ship this
 work to low-wage workers overseas? There are two aspects of programming that
 make this strategy difficult. First, adding programmers to a software project has
 rapidly diminishing returns. Second, for a software project to succeed, the ideas
-that motivate it and the ideas in the code must be closely aligned.
+that motivate it and the ideas in the program must be closely aligned.
 
 For most software projects I would not expect, for instance, a team of 1000
 programmers to produce software any better or faster than a team of 5
 programmers. Having more developers means that companies can work on more
-projects, but it does not allow them to finish any one project any faster.
+projects, but it does not allow them to finish any one project faster.
 Furthermore, having 1000 less experienced and less skilled programmers on a
 project will never compare to 5 experienced and skilled programmers.  The ideal
 programming team is "small, motivated, and
@@ -172,13 +178,11 @@ still recovering from the financial impact of the failed project.
 I had another friend whose company invested about $80,000 in a product that was
 lead by a US-based consultancy and outsourced to cheap overseas workers. The
 product failed to work consistently (mainly due to some bizarre architecture
-choices and unmaintainable programming practices). The problem was trivial and a
+choices and unmaintainable programming practices). The problem itself was trivial and
 the incumbent team created a reliable solution in a day of work.
 
-Most development teams reach a point in their process where they can no longer
-make forward progress -- they break features as fast as they fix them.  In
-general I've seen cheap off-shore teams reach this point much quicker with much
-less functionality applications than local teams.
+Why We Still Have Local Developers
+----------------------------------
 
 Over and over I've seen large teams of cheap programmers fail to deliver what
 small, motivated, and competent teams of three to five programmers are capable
@@ -192,13 +196,17 @@ programmers had no way to help a project succeed. When companies work with cheap
 offshore labor they create a situation where it is impossible for programmers to
 succeed. These companies expect to give very little input about the problem
 they are solving and believe that the sheer number of programmers they have at
-their disposal will produce results.
+their disposal will produce results. The relationship between the client and the
+company doing the programming work becomes adversarial as they begin to argue
+about exactly what the original requirements said and whether those requirements were
+technically delivered.
 
 So here's the rub: As team sizes increase the number of possible communication
 connections increases exponentially. A 3 person team has 3 connections, a 5
 person team has 10 connections, and a 15 person team has 105 connections. Think
 you've never worked on a 15 person team before? Keep in mind that I'm not
-talking about the programmers on a team, I'm talking about the Executives,
+talking about the programmers on a team, I'm talking about everyone that
+participates in the process of building software: Executives,
 Project Managers, Programmers, Designers, Marketers, Copywriters and Quality
 Assurance engineers.
 
@@ -211,14 +219,13 @@ hierarchies away from a programmer, a solution may be unattainable.
 
 I have heard of one instance where a company was happy with their cost-effective
 offshore team in Russia. I avoid using the word cheap because this business
-owner told me they were the most expensive remote team they had ever worked
+owner told me they were the most expensive remote team he had ever worked
 with. The team was translating a mobile application from one platform (iOS) to
 another (Andriod). This type of work (copying an existing
 application) approaches the kind of rote "translation" work that I'm claiming
 is not typical of programming. I believe that while we wait for standards and platforms
 to catch up, this type of project could be practical for cheap, remote teams,
-but in general we should expect technological solutions to problems like this
-which are purely "incidental complexity" in our current technological environment.
+but we should expect this work to diminish.
 
 I've leaned on the word "cheap" to describe the type of outsourcing that was
 foretold in 1998, but low-cost is not what makes these teams ineffective. The
