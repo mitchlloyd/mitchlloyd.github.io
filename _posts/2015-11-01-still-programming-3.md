@@ -17,7 +17,7 @@ room and a doctor says their thumb has been cut off. That's ID9 code
 doctor's depression diagnosis) to something that helps classify and
 organize data.
 
-Let's also consider secret military codes or a codes for particular
+Let's also consider secret military codes or codes for particular
 mediums like Morse code. The goal here is to start with a message, "hello", code
 that word, and then get "hello" on the other end of the transmission.
 
@@ -58,21 +58,21 @@ As much as I disagree with the reasons that I've seen predicting the demise of
 programming, I do understand the ethos of the arguments: something _feels_ out
 of balance. It seems strange that a worker could double their salary by learning
 a skill that can be taught in few of months. It feels like we've paid
-programmers to create a login forms and shopping cart checkouts too many times.
+programmers to create login forms and shopping cart checkouts too many times.
 
 It's hard to talk about programming without discussing the venture capital
-investments that have helped fuel its growth in the past decade. The dream that
+investments that helped fuel its growth in the past decade. The dream that
 the next Facebook will spontaneously generate out of some socially-awkward,
 20-year-old white guy in a hoodie captured the imagination of investors and
 worked its way into our popular culture. When you walk into many tech startups
 or even established Silicon Valley companies, you'll be greeted with arcade
-games, ping pong tables, and kegs of beer. Partially, this decor serves as a
-signal to differentiate a startup from the corporations they plan to disrupt,
-but it also plays to stereotypes -- like a makeshift habitat a child might build
+games, ping pong tables, and kegs of beer. Partially, this decor is a signal
+to differentiate a startup from the corporations they plan to disrupt.
+But it also plays to stereotypes -- like a makeshift habitat a child might build
 for caterpillar, hoping to see it metamorphosize under their supervision.
 
-When I meet budding entrepreneurs I it can be hard to tell if they actually want
-a tech business or really want to _talk_ about having a tech business.
+When I meet budding entrepreneurs it can be hard to tell if they want
+to have a tech business or want to _talk_ about having a tech business.
 Straightforward questions like, "What was your annual revenue last year and how
 many customers do you have?" yield indecipherable answers like, "we're
 consistently seeing 5 points month-over-month with 12% uplift".
@@ -82,13 +82,13 @@ responses to the black box of software creation.
 
 How can the same product cost $10,000, $10,000,000, or be impossible to build
 based on factors that management isn't even aware of? There is a saying that
-software projects don't fail for technological reasons but in practice it's
+software projects don't fail for technical reasons but in practice it's
 impossible for management to tell why they fail. Looking back on a project the
 costs seems inevitable, but they were not.
 
-* An employee decides to try an emerging database technology they read about on
-  Hacker News. Three years later the company has a team migrating to a
-  more proven solution while others deliver features at a hobbled pace.
+* A CTO incorrectly applies an emerging database technology they read about on
+  Hacker News. Three years later the company has a team migrating to a more
+  proven solution while others deliver features at a hobbled pace.
 
 * An enthusiastic group of programmers believe they can reinvent infrastructure
   while simultaneously building a product. Management asked for an online store
@@ -106,7 +106,7 @@ months and one that takes years to rewrite will make or break a company.
 Despite the issues I see in software development, I've very optimistic about its
 future. The industry eventually gets over fads like, "make an iPad app for
 everything", or "social network for _x_". I used to hear from startup incubators
-that everything was about having a "Big Idea" and now the [messaging emphasizes
+that everything was about having a "Big Idea". Now the [messaging emphasizes
 the importance of having a great
 team](https://www.ycombinator.com/apply/#whowefund). More often I see leaders in
 companies that value open source projects and understand the tradeoffs their workers make
@@ -119,4 +119,4 @@ every browser quirk has become less important and knowing the customer's
 business has become more important. It's all about more signal, less noise.
 
 To anyone exploring options for a first career or the next: if you thrive on
-communication, problem solving, and craft then I think you'll love programming.
+communication, problem solving, and craft then you'll love programming.
