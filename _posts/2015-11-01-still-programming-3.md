@@ -17,7 +17,7 @@ room and a doctor says their thumb has been cut off. That's ID9 code
 doctor's depression diagnosis) to something that helps classify and
 organize data.
 
-Let's also consider secret secret military codes or a code for particular
+Let's also consider secret military codes or a codes for particular
 mediums like Morse code. The goal here is to start with a message, "hello", code
 that word, and then get "hello" on the other end of the transmission.
 

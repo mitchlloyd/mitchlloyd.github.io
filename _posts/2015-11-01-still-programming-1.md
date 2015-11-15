@@ -10,7 +10,7 @@ parents were not satisfied with either of these activities as career
 aspirations.
 
 Programming, according to the wisdom of 1998, would soon to be outsourced to
-countries with emerging economies like India, China and Russia.  Programing was
+countries with emerging economies like India, China and Russia.  Programing
 was a poor choice of profession for someone living in the United States.
 
 "It really is very mundane," a teacher told me. "You could be someone that
@@ -23,7 +23,7 @@ management with leadership and programming with grunt work.
 
 In this series of posts I'll describe the nature of computer programming to
 people that have an interest in it, but not extensive experience.  I want to
-explain to why programming will not be cheaply outsourced, automated away, or
+explain why programming will not be cheaply outsourced, automated away, or
 suddenly become obsolete. I'll argue that Programmer can be a leveraged position
 for an employee.
 
@@ -86,8 +86,7 @@ Modern programmers already use many visual tools as they program. They have
 tests that show alerts when something is wrong.  They have text editors
 that complete code for them and have sophisticated ways of showing errors as
 they type. There are tools like Xcode and Visual Studio Code that have drag and
-drop interfaces.  There are applications that graph code changes to an evolving
-programming project.  Look at a programmer's screen as they work and you'll see
+drop interfaces. Look at a programmer's screen as they work and you'll see
 a myriad of colors, signals, shapes, and diagrams giving them information.
 
 Programming is not challenging because of archaic tools. Rather, programmers
@@ -96,9 +95,9 @@ that primarily rely on a mouse or finger for input can be easier to use because
 the input that a user can provide at any time is very constrained.  If you see a
 box that says "Save or Delete?" with two buttons, you know exactly what you can
 do.  When programming there are no practical limits on what the developer is
-allowed to do at any given moment. Similarly, email users could write messages by
-scrolling through a list of possible words and choosing them one at a time,
-but it's well worth their time to learn to type instead.
+allowed to do at any given moment. Similarly, when composing an email, users
+could write messages by scrolling through a list of possible words and choosing
+them one at a time, but it's well worth their time to learn to type instead.
 
 We _have_ created programming interfaces for casual users -- most notably
 [spreadsheet programs like Excel](http://c2.com/cgi/wiki?MicrosoftExcelProgrammingLanguage).

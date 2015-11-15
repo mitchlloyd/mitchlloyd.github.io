@@ -86,7 +86,7 @@ produce rounded corners on the web and now this can be accomplished in with one
 line of CSS code. When programmers recognize problems that are solved over and
 over, they create reusable libraries and frameworks that can radically improve
 the speed and reliability of software construction. Programmers are so fanatical
-about improving the sate of their work that they often join world-wide
+about improving the state of their work that they often join world-wide
 communities of volunteers to build and maintain software that eliminates
 programming work.
 
@@ -131,7 +131,7 @@ would be profitable.  It gathers information on book buying habits, creates a
 store, sets up a bank account. The computer writes 1,000 teen vampire books and
 decides to sell them exclusively on the Kindle. It brokers a deal with Amazon
 for this exclusivity and gets a bigger share of the profits.  The store nets
-  over $1,000,000 in the first six months of operation.
+over $1,000,000 in the first six months of operation.
 
 At this point we're talking about sentient and omniscient computers that can
 create new solutions to problems that humans have not thought of. If we ever get
@@ -166,7 +166,7 @@ programming team is small, motivated, and competent.
 > have 300 people and 3 years, I could equal them. No, will never equal them
 > with 300 people if you don't have the right five... (58:00)
 >
-> -- John Siracusa on [Accidental Tech Podcast #55](http://atp.fm/episodes/55-dave-who-stinks) (53:03)
+> -- John Siracusa on [Accidental Tech Podcast #55](http://atp.fm/episodes/55-dave-who-stinks)
 
 My experience may be skewed since, as a consultant working in the US, if I'm
 working with client that tried to build something cheaply with an offshore team
@@ -198,9 +198,9 @@ small, motivated, and competent teams of three to five programmers are capable
 of. There are teams that can produce software in a matter of weeks that another
 team could never create.
 
-This phenomenon has little to do with the intelligence, skill, or intrinsic
-motivations of the programmers involved. I've been on projects where I was
-floored by what the team delivered and I've been on projects where the
+This phenomenon can't be explained by looking at the intelligence, skill, or
+intrinsic motivations of the programmers involved. I've been on projects where I
+was floored by what the team delivered and I've been on projects where the
 programmers had no way to help a project succeed.
 
 When companies work with cheap, offshore labor they create a situation where it
