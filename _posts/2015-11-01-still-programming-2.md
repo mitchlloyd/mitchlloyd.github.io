@@ -4,8 +4,7 @@ title:  "Still Programing Part 2: Can't Someone Else Do It?"
 date:   2015-11-01 19:28:35 -0800
 ---
 
-We've covered some common thoughts about eliminating programmers by making their
-jobs easy enough for anyone to do in [part 1]({{page.previous.url}}).
+~~We've~~ I've covered ~~some~~ common thoughts about eliminating programmers by making the job easy enough for anyone to do in [part 1]({{page.previous.url}}).
 Now we need to tackle the question of whether computers will learn to program
 and eliminate programming jobs.
 
@@ -15,22 +14,21 @@ We Don't Need Computers That Can Program
 First you should know that we already have software that can write code.  Today
 programmers write specifications in languages that they prefer and then
 computers write the instructions that they will execute later. That's called
-[compiling](https://en.wikipedia.org/wiki/Compiler). We even have compilers
+[compiling](https://en.wikipedia.org/wiki/Compiler). We ~~even~~ have compilers
 that can watch how code is being used as it runs and rewrite it on the fly to
 perform better. We also have programs that can write human-readable code (this
 is called code generation), but that doesn't tend to be very useful -- it just
 saves a little typing.
 
-For the foreseeable future humans will need to tell a computers what to do.
-This isn't much of an issue though because once we tell a computer how to do
-something, we never need to tell it again.
+For the foreseeable future humans will need to tell ~~a~~ computers what to do.
+This isn't ~~much of~~ an issue. ~~though because~~ Once we tell a computer how to do something, we never need to tell it again.
 
 Let's talk through an example. Your boss says, "I have a file with everyone's
 birthday in it. I want you to make a program that sends everyone in the company
 an email on their birthday."
 
 By the end of the day you have the program ready for your boss and it looks
-something like this:
+~~something~~ like this:
 
 ``` ruby
 def send_birthday_greetings(filename)
@@ -69,7 +67,7 @@ everyone's pet's birthday she can do that without even talking to us.
 
 If our job was to send birthday greetings, we're unemployed. If our job was to
 write programs that send messages on certain days, we've programmed our job out
-of existence.
+of existence. [[Second sentence seems redundant]]
 
 As programmers we avoid writing repetitive code or solving the same problem
 twice.  We take repetitive tasks and make it possible to do them over and over
@@ -82,27 +80,17 @@ we can stop dealing with trivial technical problems and focus on the
 fundamental complexity of what we're working on.
 
 For instance, front-end developers used to spend hours creating images to
-produce rounded corners on the web and now this can be accomplished in with one
-line of CSS code. When programmers recognize problems that are solved over and
-over, they create reusable libraries and frameworks that can radically improve
-the speed and reliability of software construction. Programmers are so fanatical
-about improving the state of their work that they often join world-wide
-communities of volunteers to build and maintain software that eliminates
-programming work.
+produce rounded corners on the web ~~and~~. Now this can be accomplished in with one line of CSS code. When programmers recognize problems that are solved over and over, they create reusable libraries and frameworks that can radically improve the speed and reliability of software construction. Programmers are so fanatical about improving the state of their work that they often join world-wide communities of volunteers to build and maintain software that eliminates programming work.
 
 If programming keeps getting "easier" then why isn't there less demand for
 software developers? Because as creating software gets more efficient, we find
 new uses for it and tackle new problems that were too hard and too expensive to
-do before.  This is why we can have autonomous vehicles and too many online
-social networks.
+do before.  ~~This is why~~Now we can have autonomous vehicles and too many online social networks.
 
 If Computers Could Program
 --------------------------
 
-So the very nature of programming is that it eliminates repetitive work. Let's
-focus back on the question: Can we teach a computer to program? Can a computer
-take some very basic input from a human and create a new program as a human
-programmer would?
+~~So~~ The ~~very~~ nature of programming is that it eliminates repetitive work. Let's focus back on the question: Can we teach a computer to program? Can a computer take ~~some very~~ basic input from a human and create a new program as a human programmer would?
 
 Here's our thought experiment: Tom wants to start a business selling books, so
 he goes to a computer and says, "build a program to sell books." The computer
@@ -113,25 +101,15 @@ his business's bank information. He needs some way to tell the application what
 books is he selling and whether they are physical or can be downloaded.  What
 shipping providers is he going to use?
 
-This is getting a little involved, but this isn't programming, right? This is
-just using and configuring a program.
+This is getting a ~~little~~ involved, but this isn't programming, right? This is just using and configuring a program.
 
-My point is this: Even if we could teach a computer to write a program like this
-it wouldn't be useful. If someone came to me today and said they want to sell
-books on the web (and that is all the information they gave me) I would go
-online, find an existing program, and use that. Again, this is
-the nature of programming -- after we write a program we can run it and copy it as
+~~My point is this~~: Even if we could teach a computer to write a program like this it wouldn't be useful. If someone came to me today and said they want to sell books on the web (and that is all the information they gave me) I would go
+online, find an existing program, and use that. Again, this is the nature of programming -- after we write a program we can run it and copy it as
 many times as we want at very little cost.
 
 The only point where a "programming computer" becomes useful is when it requires
 very little human thought and input to work. In other words, the computer would
-need to use Artificial Intelligence fill in all the logical gaps to create the
-program. Tom says, "make me money" and the computer decides that a book store
-would be profitable.  It gathers information on book buying habits, creates a
-store, sets up a bank account. The computer writes 1,000 teen vampire books and
-decides to sell them exclusively on the Kindle. It brokers a deal with Amazon
-for this exclusivity and gets a bigger share of the profits.  The store nets
-over $1,000,000 in the first six months of operation.
+need to use Artificial Intelligence to fill in all the logical gaps to create the program. Tom says, "make me money" and the computer decides that a book store would be profitable.  It gathers information on book buying habits, creates a store, sets up a bank account. The computer writes 1,000 teen vampire books and decides to sell them exclusively on the Kindle. It brokers a deal with Amazon for this exclusivity and gets a bigger share of the profits.  The store nets over $1,000,000 in the first six months of operation.
 
 At this point we're talking about sentient and omniscient computers that can
 create new solutions to problems that humans have not thought of. If we ever get
@@ -141,11 +119,7 @@ Programming is Not a Good Candidate for Cheap Outsourcing
 ---------------------------------------------------------
 
 So if humans are going to continue programming for now, why can't we ship this
-work to low-wage workers overseas as my teachers suggested in 1998? There are
-two aspects of programming that make this strategy difficult. First, adding
-programmers to a software project has rapidly diminishing returns. Second, for a
-software project to succeed, the ideas that motivate it and the ideas in the
-program must be closely aligned.
+work to low-wage workers overseas as my teacher~~s~~ suggested in 1998? ~~There are two aspects of programming that make this strategy difficult~~. First, adding programmers to a software project has rapidly diminishing returns. Second, for a software project to succeed, the ideas that motivate it and the ideas in the program must be closely aligned.
 
 For most software projects I would not expect, for instance, a team of 1000
 programmers to produce software any better or faster than a team of 5
@@ -175,7 +149,7 @@ give an idea of how bad things can get for these companies.
 
 In one case, a friend of mine was working with an offshore team based in India
 to create a software product that gave paying users access to content. After
-spending a year and more than $300,000 on the product, they finally had to
+spending a year and more than $300,000 on the product, they ~~finally~~ had to
 abandon it. This was a devastating blow to this small company and they had to
 give up on their growth strategy and change their business model to survive.  My
 friend later described the product to me and I told him that all of the
@@ -186,9 +160,8 @@ the financial impact of the failed project.
 
 I had another friend whose company invested about $80,000 in a product that was
 lead by a US-based consultancy and outsourced to cheap overseas workers. The
-product failed to work consistently (mainly due to some bizarre architecture
-choices and unmaintainable programming practices). The problem itself was trivial and
-the incumbent team created a reliable solution in a couple days of work.
+product failed to work consistently [[(mainly due to some bizarre architecture
+choices and unmaintainable programming practices) is this relevant to stating your point?]]. The problem itself was trivial and the incumbent team created a reliable solution in a couple days of work.
 
 Why We Still Have Local Developers
 ----------------------------------
@@ -208,7 +181,7 @@ is impossible for programmers to succeed. These companies expect to give very
 little input about the problem they are solving and believe that the sheer
 number of programmers they have at their disposal will produce results. The
 relationship between the client and the company doing the programming work
-becomes adversarial as they begin to argue about exactly what the original
+becomes adversarial as they begin to argue about ~~exactly~~ what the original
 requirements said and whether those requirements were technically delivered.
 
 More programmers is rarely better because as team sizes increase the number of
@@ -219,7 +192,7 @@ talking about the programmers on a team, I'm talking about everyone that
 participates in the process of building software: Executives, Project Managers,
 Programmers, Designers, Marketers, Copywriters and Quality Assurance engineers.
 
-Given that programming is the practise of synthesizing ideas into solution that
+Given that programming is the practice of synthesizing ideas into solution that
 can be reperformed by a computer, any distance, noise, and "game of telephone"
 effects between the problem and the solution are devastating. When a competent
 programmer knows the full scope of a problem, nothing can rival their
@@ -233,8 +206,8 @@ these providers: a relationship where the company's employees dream of a product
 and then expect programmers to translate these dreams into "code". In this
 relationship, the ideas are valuable and "coding" is a comoditized service.
 
-I've worked with extremely effective offshore teams, but these teams were
-selected for their expertise, not just for their price. These programmers were
+I've worked with extremely effective offshore teams. These teams were
+selected for their expertise, not just for their price. The programmers were
 integrated into the development process as much as any employee and were
 involved in designing the product, not just coding it into existence based on a
 set of requirements.
