@@ -25,7 +25,7 @@ inevitable
 demise](http://techcrunch.com/2015/10/23/coding-academies-are-nonsense/).
 
 In this series of posts I'll describe the nature of computer programming to
-people that have an interest in it, but not extensive experience.  I'll why
+people that have an interest in it, but not extensive experience.  I'll explain why
 programming will not be cheaply outsourced, automated away, or suddenly become
 obsolete. I'll argue that Programmer can be a leveraged position in a company.
 
