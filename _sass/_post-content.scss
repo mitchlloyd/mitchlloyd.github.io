@@ -31,4 +31,10 @@
       font-size: 18px;
     }
   }
+
+  footer {
+    margin-top: $spacing-unit * 2;
+    font-style: italic;
+    color: $grey-color;
+  }
 }

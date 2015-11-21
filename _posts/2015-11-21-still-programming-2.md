@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Still Programing Part 2: Can't Someone Else Do It?"
-date:   2015-11-01 19:28:35 -0800
+date:   2015-11-21
 ---
 
 I've covered common thoughts about eliminating programmers by making their

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Still Programing Part 3: Why the Confusion?"
-date:   2015-11-01 19:28:35 -0800
+date:   2015-11-21
 ---
 
 "Coding" is Confusing People
@@ -120,3 +120,8 @@ business has become more important. It's all about more signal, less noise.
 
 To anyone exploring options for a first career or the next: if you thrive on
 communication, problem solving, and craft then you'll love programming.
+
+<footer markdown="1">
+  Thanks to [Michael Guterl](http://michaelguterl.com/) and [Kistin
+  Lasita](http://kristinlasita.com/) for editing and feedback on this series.
+</footer>
