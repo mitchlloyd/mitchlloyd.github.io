@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Still Programing Part 1: Making Programming Easy Enough for Everyone"
-date:   2015-11-01 19:28:35 -0800
+date:   2015-11-21
 ---
 
 When I was a junior in high-school, adults asked me what I wanted to do for a
@@ -19,7 +19,10 @@ _manages_ developers, but you don't want to _actually_ be writing code."
 I want to believe this attitude toward programming has changed, but in my career
 I've still found people who believe the value of a manager is always greater
 than the value of a programmer. This misunderstanding begins when one equates
-management with leadership and programming with grunt work.
+management with leadership and programming with grunt work. On top of this, I
+hear [proclamations that the field of programming is nearing an
+inevitable
+demise](http://techcrunch.com/2015/10/23/coding-academies-are-nonsense/).
 
 In this series of posts I'll describe the nature of computer programming to
 people that have an interest in it, but not extensive experience.  I'll why
