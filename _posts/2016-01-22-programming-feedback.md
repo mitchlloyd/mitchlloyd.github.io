@@ -12,13 +12,13 @@ Testing and Me
 When I started programming Ruby, passionate testing rhetoric was everywhere but
 thoughtful discussion was hard for me to find. The most unmaintainable code
 bases I've ever seen covered excruciatingly simple domains and were created by
-people that identified as die-hard TDDers. The tests in these projects primarily
-created noise and maintenance overhead while providing little feedback.  Still,
-I realized that automated testing was valuable and I saw glimpses of it working
-in open source projects.
+people that identified as die-hard TDDers. The tests in these projects created
+noise and maintenance overhead while providing little feedback. Still, I
+realized that automated testing was valuable and I saw glimpses of it working
+for open source projects.
 
 When I read Sandi Metz's chapter on "Designing Cost Effective Tests" in
-Practical Object Oriented Ruby it was another revelation.
+Practical Object Oriented Ruby it was a revelation.
 
 > Most programmers write too many tests... One simple way to get better value
 > from tests is to write fewer of them.
@@ -27,9 +27,9 @@ I had not heard someone so confidently acknowledge that each test comes with a
 cost and articulate the value that tests should provide.
 
 Another testing insight came from Growing Object Oriented Software Guided by
-tests. It sparked an understanding that testing itself is not virtuous. Feedback
-is the fundamental tool, and automated testing is just one way to get feedback.
-When tests stop providing good feedback, they have lost their value.
+tests. It emphasized that that testing itself is not virtuous. Feedback is the
+fundamental tool, and automated testing is just one way to get feedback. When
+tests stop providing good feedback, they have lost their value.
 
 Today I have a great fondness for testing, but a high standard for what tests
 can live in my projects.
@@ -46,9 +46,9 @@ covers an approach to using test doubles that allows him to systematically use a
 top-down design approach.
 
 I also hold the idea of top-down design dear, but I've found myself using very
-few test doubles in the last couple years. As Justin did in his screencasts, I
-decided to chronicle an implementation of Conway's Game of Life and reflect on
-my current programming approach.
+few test doubles recently. As Justin did in his screencasts, I decided to
+chronicle an implementation of Conway's Game of Life and reflect on my current
+programming approach.
 
 Part 1
 ------
