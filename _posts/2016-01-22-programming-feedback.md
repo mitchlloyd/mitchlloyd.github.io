@@ -4,6 +4,8 @@ title:  "Programming Feedback by Example"
 date:   2016-01-23
 ---
 
+<iframe src="https://player.vimeo.com/video/152833900" width="740" height="416" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Testing and Me
 --------------
 
