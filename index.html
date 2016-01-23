@@ -13,13 +13,53 @@ layout: default
 </div>
 
 <h2 class="text-thin">Posts</h2>
-<ul class="list-unstyled">
+<ul class="list-unstyled mb">
   {% for post in site.posts %}
     <li>
-      <h2 class="text-base">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
+       {% if post.external_url %}
+         <h2 class="text-base">
+           <a href="{{ post.external_url }}" target="_blank">{{ post.title }}</a>
+           <span class="text-quiet text-thin">(Published on {{ post.external_site }})</span>
+         </h2>
+       {% else %}
+         <h2 class="text-base">
+           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+         </h2>
+       {% endif %}
     </li>
   {% endfor %}
 </ul>
 
+<h2 class="text-thin">Speaking</h2>
+
+<figure class="video-figure">
+  <iframe src="https://player.vimeo.com/video/152241622?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>Discusing Ember Island's approach to hybrid web applications at Ember Global Meetup</figcaption>
+</figure>
+
+<figure class="video-figure">
+  <iframe width="500" height="281" src="https://www.youtube.com/embed/1E2E7qEkyeA" frameborder="0" allowfullscreen></iframe>
+  <figcaption>Speaking at San Franciso Ember Meetup about creating effective mental models to help developers program</figcaption>
+</figure>
+
+<figure class="media" style="width: 500px;">
+  <div class="media-left">
+    <a href="https://frontsidethepodcast.simplecast.fm/23">
+      <img class="media-object" height="100px" src="https://simplecast-media.s3.amazonaws.com/episode/image/23081/thumb_1450234143-artwork.jpg">
+    </a>
+  </div>
+  <div class="media-body">
+    <a class="media-heading" href="https://frontsidethepodcast.simplecast.fm/23">The Frontside Podcast Episode 23</a>
+    <p class="text-thin">Discussing Ember Islands, Ember observable chains, and training.</p>
+  </div>
+</figure>
+
+<figure class="video-figure">
+  <iframe width="500" height="281" src="https://www.youtube.com/embed/-5hkHTmnJAg?t=13s" frameborder="0" allowfullscreen></iframe>
+  <figcaption>A lightning talk at 2015 Ember Conf about a new library that let's developers embedded Ember components in server-rendered HTML pages.</figcaption>
+</figure>
+
+<figure class="video-figure">
+  <iframe src="https://player.vimeo.com/video/76114274?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>Lessons from a long-running project integrating hardware components with a Ruby on Rails Application at 2013 Windy City Rails.</figcaption>
+</figure>

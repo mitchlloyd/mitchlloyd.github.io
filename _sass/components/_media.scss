@@ -1,0 +1,61 @@
+// The media object from Bootstrap 4
+
+.media {
+  display: flex;
+  margin-bottom: $spacing-unit;
+}
+.media-body {
+  flex: 1;
+}
+.media-middle {
+  align-self: center;
+}
+.media-bottom {
+  align-self: flex-end;
+}
+
+//
+// Images/elements as the media anchor
+//
+
+.media-object {
+  display: block;
+
+  // Fix collapse in webkit from max-width: 100% and display: table-cell.
+  &.img-thumbnail {
+    max-width: none;
+  }
+}
+
+
+//
+// Alignment
+//
+
+.media-right {
+  padding-left: $spacing-unit;
+}
+
+.media-left {
+  padding-right: $spacing-unit;
+}
+
+
+//
+// Headings
+//
+
+.media-heading {
+  margin-top: 0;
+  margin-bottom: $spacing-unit;
+}
+
+
+//
+// Media list variation
+//
+
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
