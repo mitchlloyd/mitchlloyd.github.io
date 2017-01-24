@@ -6,8 +6,13 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300italic,400italic,700,300' rel='stylesheet' type='text/css'>
+  {% if page.mermaid %}
+    <script src="{{ '/js/mermaid.js' | prepend: site.baseurl }}"></script>
+    <script>mermaid.initialize({startOnLoad:true})</script>
+    <link rel="stylesheet" href="{{ '/css/mermaid.css' | prepend: site.baseurl }}">
+  {% endif %}
 </head>
