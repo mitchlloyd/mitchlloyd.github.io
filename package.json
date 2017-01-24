@@ -1,0 +1,12 @@
+{
+  "name": "mitchlloyd-jekyll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {},
+  "author": "Mitch Lloyd <mitch.lloyd@gmail.com> (http://mitchlloyd.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "mermaid": "^6.0.0"
+  }
+}
