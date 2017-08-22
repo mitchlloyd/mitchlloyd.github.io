@@ -34,7 +34,7 @@ practice is sometimes called "tunneling".
 <script src="https://gist.github.com/mitchlloyd/555d7a655a1d72e6f2dae80d00083ebb.js?file=tunneling-component.jsx"></script>
 
 Tunneling properties through components starts small. But every time a
-developer extracts an intermediate component , they must tunnel all the
+developer extracts an intermediate component, they must tunnel all the
 properties through that new component. It's like they're being punished every
 time they improve the design.
 
