@@ -5,7 +5,7 @@ date:   2017-08-20
 ---
 
 Redux can eliminate the need for component state by storing all data in one
-immutable object. However, Redux introduces new complexity to manage global
+immutable object. However Redux introduces new complexity to manage global
 state and actions. For domain resources (usually fetched over HTTP) a global
 store enables sophisticated caching strategies. But for application state,
 it's often more trouble than it's worth.
@@ -15,7 +15,7 @@ ProjectPage, Search, ValidatedField) rather than by technical patterns (e.g.
 views, containers, actions, reducers). Effective product teams work in terms
 of features, not abstract technical domains.
 
-The constraint of working with component state puts pressure on our designs.
+Deciding to work with component state puts pressure on our designs.
 Developers must decide which components should own state and then connect
 parent and child components to that state with data props and callbacks.
 Because components can make API calls, manage internal state, and render HTML
@@ -33,10 +33,10 @@ practice is sometimes called "tunneling".
 
 <script src="https://gist.github.com/mitchlloyd/555d7a655a1d72e6f2dae80d00083ebb.js?file=tunneling-component.jsx"></script>
 
-Tunneling properties through intermediate components starts small. But every
-time a developer extracts a new component, they must tunnel all the
-properties through that new component. It's like they're being punished
-every time they improve the design.
+Tunneling properties through components starts small. But every time a
+developer extracts an intermediate component , they must tunnel all the
+properties through that new component. It's like they're being punished every
+time they improve the design.
 
 Let's look at an example of a search component that follows a naive design
 path.
@@ -48,11 +48,11 @@ names (e.g. `onFilterClear` to `this.handleFilterClear`) without providing
 any new information. It's redundant but it's a reasonable way to expose a
 public API to `SearchLayout`.
 
-So now let's check out the `SearchLayout` component:
+Now let's check out the `SearchLayout` component:
 
 <script src="https://gist.github.com/mitchlloyd/555d7a655a1d72e6f2dae80d00083ebb.js?file=before-search-layout.jsx"></script>
 
-`SearchLayout` has some presentation concerns (notice the heading and the
+`SearchLayout` has some presentation responsibilities (notice the heading and the
 horizontal rule), but it also has to divvy up props from its owner to its
 children. This time we're mapping props that our component doesn't care about
 to other props that our component doesn't care about. This is where we start
@@ -87,7 +87,7 @@ I argue this design is better because we've eliminated the repetition of
 tunneling our properties through the `SearchLayout`. We now map the `Search`
 properties to owned components once rather than twice. We've also identified
 an implicit responsibility (configuration) that was shared between two
-components and isolated it inside of `Search`.
+components and is now confined to `Search`.
 
 However, if we look at the `Search` component before and after this
 refactoring we notice that it's more complicated. Although `SearchLayout` is
@@ -107,7 +107,7 @@ Introducing the SearchQuery Component
 
 An alternative, and probably a more popular option, is to create a higher
 order component that accepts `Search` as an argument and renders it with
-`props.query`. I prefer the render callback because it declaratively shows
+a `query` prop. I prefer the render callback because it declaratively shows
 how all of our search components work together inside of `Search`.
 
 Notice that I cheated a little. Not only did I extract a component to handle
@@ -118,7 +118,7 @@ I'll call `query` inside of `Search`.
 
 <script src="https://gist.github.com/mitchlloyd/555d7a655a1d72e6f2dae80d00083ebb.js?file=after-search.jsx"></script>
 
-We setout to remove some `prop` tunneling and at the same time dramatically
+We set out to remove some `prop` tunneling and at the same time dramatically
 increased the flexibility of our design. It would be trivial to create
 another `Search` component that uses a different `SearchQuery` component to
 accommodate a different backend. We could inject a different presentation for
@@ -130,11 +130,10 @@ consistent, making our components easier to understand.
 Goodbye Tunneling
 -----------------
 
-If you squint a little you could see `query` as a little Redux bundle with
-one immutable state object and 3 actions (setFilter, clearFilter, setTerm)
-that we dispatch by calling.
+If you squint a little you can see `query` as a little Redux bundle with one
+immutable state object and 3 actions (setFilter, clearFilter, setTerm).
 
 By creating a domain object and a component dedicated to composition, we
-removed the pain of tunneling state though intermediate components. As a
-happy side-effect we created a design that is more flexible, has constant
-levels of abstraction, and is easier to test.
+removed the state tunneling pain. As a happy side-effect we created a design
+that is more flexible, has constant levels of abstraction, and is easier to
+test.
