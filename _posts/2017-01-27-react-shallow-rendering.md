@@ -10,8 +10,8 @@ some baseline testing principles.
 1. Tests should exercise public interfaces.
 
    Tests should use functions and objects as they are used in your application.
-   This means that tests should not directly call private functions and that
-   that nothing else in the application should access.
+   This means that tests should not directly call private functions or access
+   private variables.
 
 2. Testing should influence design.
 
