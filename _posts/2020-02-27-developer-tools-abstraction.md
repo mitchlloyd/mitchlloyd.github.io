@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Good Developer Tools Support Abstraction"
-date:   2020-02-28
+date:   2020-02-27
 ---
 
 When I stopped writing CloudFormation and picked up [CDK][cdk], I expected a
