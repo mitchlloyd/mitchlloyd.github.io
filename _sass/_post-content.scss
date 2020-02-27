@@ -6,30 +6,37 @@
   }
 
   h2 {
-    font-size: 32px;
-    line-height: 1.2;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: $spacing-unit;
 
     @include media-query($on-laptop) {
-      font-size: 28px;
+      font-size: 1.5rem;
     }
 
-    margin-top: $spacing-unit;
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-top: $spacing-unit * 0.75;
 
     @include media-query($on-laptop) {
-      font-size: 22px;
+      font-size: 1.25rem;
     }
   }
 
   h4 {
-    font-size: 20px;
+    font-size: inherit;
+    font-weight: bold;
+  }
 
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 1.666rem auto;
+    max-width: 3rem;
   }
 
   footer {
