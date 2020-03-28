@@ -7,7 +7,7 @@ date:   2020-02-27
 When I stopped writing CloudFormation and picked up [CDK][cdk], I expected a
 _slightly_ better experience. The tooling and type checking from TypeScript
 seemed useful, but I wondered if it was worth the extra layer of abstraction.
-After four months of using CDK, the productivity leap is surpising. Technical
+After four months of using CDK, the productivity leap is surprising. Technical
 solutions that used to be expensive and daunting are now fun to build.
 
 I often hear developers ask, "Why would I want to move from a
@@ -44,10 +44,9 @@ and developers are stuck waiting for another one-off solution.
 
 For instance, [SAM templates][sam-templates] lower the complexity of using
 CloudFormation but only address a narrow problem space. Developers must eject
-from the paradigm when their needs expand or the landscape changes. TC39
-could have introduced the awaitable `fetch()` function to JavaScript without
-first providing `Promise`. Having `await fetch()` would address many use
-cases but leave a conceptual hole in the language.
+from the paradigm when their needs expand or the landscape changes. Golang
+famously provides two data structures that implement generics as a special
+case (map and slice), but doesn't let developers do the same.
 
 ---
 
@@ -64,11 +63,11 @@ The alternative to "abstraction spikes" are solutions built on smaller
 primitives. And, perhaps counterintuitively, it's important to expose those
 primitives to developers.
 
-Although most React programmers use JSX, the `React.createElement()` function
-is an important public API to understand. In contrast, Ember's early
-templating engine was opaque and needed many iterations to reduce the number
-of special helpers and keywords. To developers, React templating was simpler
-to understand because they understood the `React.createElement()` api.
+A good example is the evolution of `async/await` in JavaScript. Arguably,
+being able to write `await fetch()` is the most important feature, but
+developers can write their own awaitable functions with the `Promise`
+primitive. This allows developers to build with a consistent approach for all
+asynchronous code they use.
 
 ### Composable
 
@@ -166,12 +165,69 @@ The caller no longer knows what the cluster does with the services. It may just
 add their `desiredCounts` together or it may use some other information to
 decide how many machines it needs.
 
-Of course abstraction can hinder understanding. With more power, we risk
-creating a confusing system that is hard to adapt. But when we're building
-something complex, it is the risk we have to take. Our only choice is to
-build abstractions well and embrace [Software's Primary Technical
-Imperative][code-complete].
+## Going Big
 
+Code reuse in the small is easy to pull off. Could we realize the promise of
+integrating large, reusable modules with a tool like CDK? I'm still finding
+out, but I'm optimistic.
+
+Consider [this heroic project][ecs-airflow] which creates hundreds of AWS
+resources to deploy Airflow with CloudFormation templates. Using this
+this project involves a mix of manual steps and ad hoc scripts. If you need
+to maintain this system over time, you're likely to modify the CloudFormation
+templates, breaking the abstraction. Every new extension point for this
+project requires a new top-level parameter for users to consider.
+
+Contrast that with a hypothetical solution using CDK. All of the messy
+deployment and installation concerns are dealt with by CDK, npm, and other
+common developer tools, freeing a library author to focus on the
+implementation and user interface of the solution. A CDK user wouldn't even
+need to look at README to get started. They would just type and learn
+how to setup Airflow:
+
+<img width="827" src="/assets/developer-tools-abstraction/ts-guiding.png" />
+
+Maybe all you want is to get started with some sane defaults.
+
+```ts
+export class AirflowStack extends core.Stack {
+  constructor(scope: core.App, id: string, props?: AirflowStackProps) {
+    super(scope, id, props);
+
+    new airflow.System(this, 'Airflow');
+  }
+}
+```
+
+Or maybe you need robust replication on the Airflow database and want to use MySQL
+instead of Postgres. If you can adhere to an the interface for `Storage`, you
+could meet requirements that the library author never intended.
+
+```ts
+export class AirflowStack extends cdk.Stack {
+  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
+
+    const storage = new mystoragelib.AuroraMySQLStorage(this, 'DB', {
+      replication: new airflow.CrossRegionReplication({
+        regions: ['us-west-2', 'us-east-1'],
+        replicasPerRegion: 2,
+      }),
+    });
+
+    new airflow.System(this, 'Airflow', {
+      storage,
+    });
+  }
+}
+```
+
+Of course object-oriented programming is a demanding discipline and
+abstraction can hinder understanding. With more power, we risk creating a
+confusing system that is hard to adapt. But when we're building something
+complex, it is the risk we have to take. Our only choice is to build
+abstractions well and embrace [Software's Primary Technical
+Imperative][code-complete].
 
 ---
 
@@ -208,3 +264,4 @@ Imperative][code-complete].
 [tf-fn-docs]: https://www.terraform.io/docs/configuration/functions.html
 [cdk]: https://github.com/aws/aws-cdk
 [sam-templates]: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification.html
+[ecs-airflow]: https://github.com/FreckleIOT/ecs-airflow
