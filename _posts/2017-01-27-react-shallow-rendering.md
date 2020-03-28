@@ -29,7 +29,7 @@ Let's look at two problems with shallow rendering.
 
 ## Problem 1: Mocking implementation details is brittle and creates low value tests.
 
-Let's look at module called `subtract.js`.
+Here's a module called `subtract.js`.
 
 ```js
 export default function subtract(a, b) {
@@ -72,7 +72,7 @@ import subtractor from 'subtract';
 
 it('subtract calls _add and flips the sign of the second argument', () => {
   let addCalls = [];
-  subtractor.add = (...args) => {
+  subtractor._add = (...args) => {
     addCalls.push(args);
     return 'subtract-response';
   }
@@ -234,7 +234,7 @@ outer scope. `callIt` is not a pure function, it has a side effect because it
 calls the function that was passed in and it implicitly depends on `mapIt`. If
 only we could untangle these dependencies, this would be a lot easier to test.
 
-We'll untangle by moving the co-ordination of these functions into a new
+We'll untangle by moving the coordination of these functions into a new
 function that composes them.
 
 ```js
@@ -293,7 +293,7 @@ Shallow Render
 --------------
 
 This pattern is so common when building components that I'm pretty sure
-most developers would wouldn't raise an eyebrow.
+most developers wouldn't raise an eyebrow.
 
 ```jsx
 class ToDoApp extends React.Component {
