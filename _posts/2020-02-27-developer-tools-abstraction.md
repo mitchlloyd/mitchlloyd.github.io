@@ -169,7 +169,7 @@ decide how many machines it needs.
 
 Code reuse in the small is easy to pull off. Could we realize the promise of
 integrating large, reusable modules with a tool like CDK? I'm still finding
-out, but I'm optimistic.
+out but I'm optimistic.
 
 Consider [this heroic project][ecs-airflow] which creates hundreds of AWS
 resources to deploy Airflow with CloudFormation templates. Using this
@@ -185,7 +185,7 @@ implementation and user interface of the solution. A CDK user wouldn't even
 need to look at README to get started. They would just type and learn
 how to setup Airflow:
 
-<img width="827" src="/assets/developer-tools-abstraction/ts-guiding.png" />
+<img width="827" src="/images/developer-tools-abstraction/ts-guiding.png" />
 
 Maybe all you want is to get started with some sane defaults.
 
