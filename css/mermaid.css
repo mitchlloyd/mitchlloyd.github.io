@@ -271,3 +271,16 @@ div.mermaidTooltip {
   pointer-events: none;
   z-index: 100;
 }
+
+/* Provide a way to emphasize certain tree nodes */
+.node.emphasis rect,
+.node.emphasis circle,
+.node.emphasis ellipse,
+.node.emphasis polygon {
+  fill: #565697;
+  stroke: #131366;
+  stroke-width: 1px;
+}
+.node.emphasis > .label {
+  color: white;
+}

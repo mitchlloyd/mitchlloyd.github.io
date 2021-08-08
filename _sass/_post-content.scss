@@ -5,6 +5,11 @@
     max-width: 39rem;
   }
 
+  // Exception, allow higlight pre tags to be full width
+  .highlight pre {
+    max-width: inherit;
+  }
+
   h2 {
     font-size: 1.25rem;
     font-weight: bold;
