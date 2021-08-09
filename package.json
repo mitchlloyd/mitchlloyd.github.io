@@ -7,6 +7,6 @@
   "author": "Mitch Lloyd <mitch.lloyd@gmail.com> (http://mitchlloyd.com/)",
   "license": "ISC",
   "dependencies": {
-    "mermaid": "^6.0.0"
+    "mermaid": "^8.2.3"
   }
 }
