@@ -227,7 +227,7 @@ Implementing Push
 
 Now we'll focus on enhancing our `push` method so that it maintains the
 properties of the minimum heap. Whenever we finish an operation, each tree node
-should be smaller than it's two children. This means that the root node of the
+should be smaller than its two children. This means that the root node of the
 tree (position `0` in our array) should be the smallest item in the heap.
 
 Whenever a new item is added, it likely needs to be repositioned. It might even
@@ -246,7 +246,6 @@ push(value) {
   // If we get to i === 0, then this is the new heap minimum and
   // we can stop.
   while (i > 0) {
-    // For now, just believe this gets the parent node index.
     const parentIndex = Math.ceil(i / 2) - 1;
 
     // If the current value isn't smaller than the parent value,
@@ -337,11 +336,11 @@ pop() {
 ```
 
 This operation is supposed to remove the minimum from the heap, so we need some
-value to put in it's place. Although it's unlikely to be the new minimum, we
+value to put in its place. Although it's unlikely to be the new minimum, we
 choose to `pop()` the last item from the array because this shortens the array
 without disturbing the qualities of our heap tree. If we choose to `shift()`
 earlier to remove the minimum or `splice()` an item from the middle, our array
-representation of a tree (where every parent node is smaller than it's children)
+representation of a tree (where every parent node is smaller than its children)
 would be destroyed.
 
 ```js
@@ -361,7 +360,6 @@ pop() {
   // ...
   let i = 0;
   while (true) {
-    // Again just believe this math works for now.
     const [leftIndex, rightIndex] = [(i * 2) + 1, (i * 2) + 2];
 
     // I'm choosing to set undefined values to Infinity so that they're
