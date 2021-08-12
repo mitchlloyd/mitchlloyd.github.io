@@ -4,6 +4,11 @@ mermaid: true
 title: JavaScript Heap
 ---
 
+<script async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0892125849735349"
+  crossorigin="anonymous">
+</script>
+
 If you've landed here in the heat of an interview here is a Javascript heap implementation:
 
 ```js
