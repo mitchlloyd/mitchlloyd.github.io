@@ -9,9 +9,9 @@ perspective of the caller. [_Code Complete_](https://amzn.to/4cZ3EDj) explains
 this concept stating that a good routine name "speaks to the problem rather than
 the solution". Naming methods and functions from the caller's perspective may
 seem like a stylistic choice at first but the practice improves the quality of
-abstractions in a code base.
+abstractions in a codebase.
 
-## Hide implementation details - member and method names
+## Hide implementation details of objects and methods
 
 An obvious way to use the wrong perspective when naming is to reveal the inner
 workings of some object or function. Consider the following example where EMF
@@ -56,7 +56,32 @@ func main() {
 }
 ```
 
-## Hide implementation details - parameters
+## But describe what things do
+
+Another common mistake is choosing names based on the input being passed rather
+than the output created or the side effect produced. In the next example, the
+name `kinesisEventProcessor` provides no new information at the call site. The
+caller already knew that this was a Kinesis record.
+
+```go
+func handler(ctx context.Context, req events.KinesisEvent) error {
+    for _, record := range req.Records {
+        kinesisRecordProcessor.Process(record)
+    }
+}
+```
+
+Renaming this object is an opportunity to explain the domain to the reader.
+
+```go
+func handler(ctx context.Context, req events.KinesisEvent) error {
+    for _, record := range req.Records {
+        highScorePublisher.Publish(record)
+    }
+}
+```
+
+## Hide implementation details with parameters
 
 Sometimes parameters are named and organized for convenience in a function's
 implementation rather than the caller's. One situation where this can happen is
@@ -95,35 +120,9 @@ func (s *Server) PostComment(user *User, device *Device, text string) {
 }
 ```
 
-However, sometimes it makes sense for the caller to know about the underlying
-services being used. If that's the case, reevaluate whether the method is a
-useful abstraction or whether the caller should interact with these services
-directly.
-
-## Describe what things do
-
-A more subtle mistake is to choose names based on the input being passed rather
-than the output created or the side effect produced. In the next example, the
-name `kinesisEventProcessor` provides no new information at the call site. The
-caller already knew that this was a Kinesis record.
-
-```go
-func handler(ctx context.Context, req events.KinesisEvent) error {
-    for _, record := range req.Records {
-        kinesisRecordProcessor.Process(record)
-    }
-}
-```
-
-Renaming this object is an opportunity to explain the domain to the reader.
-
-```go
-func handler(ctx context.Context, req events.KinesisEvent) error {
-    for _, record := range req.Records {
-        highScorePublisher.Publish(record)
-    }
-}
-```
+If you run into a case where a caller has to know about the underlying services
+being used, reevaluate whether the method is a useful abstraction or whether the
+caller should interact with these services directly.
 
 ## Notice overlapping context
 
@@ -168,90 +167,6 @@ func (s *Server) SaveProfile(id string, image []byte) { cropped :=
     s.imageCropper.Crop(Dimensions{Height: 300, Width: 300})
     // ...
 }
-```
-
-Next consider this example that builds dashboards for some operational metrics:
-
-```go
-metrics := newMetrics(publisherLambdaARN, apiLambdaARN)
-
-publisherDashboard := newDashboard("Publisher",
-    LineGraph{
-        title: "Invocations",
-        period: time.Minute,
-        metric: metrics.publisherInvocations,
-        width: 4,
-    },
-    LineGraph{
-        title: "Errors",
-        period: time.Minute,
-        metric: metrics.publisherErrors,
-        width: 6,
-    },
-    // ...
-)
-
-apiDashboard := newDashboard("API", 
-    LineGraph{
-        title: "Invocations",
-        period: time.Second,
-        metric: metrics.apiInvocations,
-        width: 4,
-    },
-    LineGraph{
-        title: "Errors",
-        period: time.Second,
-        metric: metrics.apiErrors,
-        width: 6,
-    },
-    // ...
-)
-```
-
-There's something off about the naming of metrics members with "publisher" or
-"api" prefixes. Again there's overlap between the callers, which are firmly
-grounded in their "publisher" and "api" domains, and the `metrics` member names.
-This kind of situation can occur when an engineer has the mindset of grouping
-all of a type together (e.g. "all metrics together").
-
-The following change removes the wider type returned by `newMetrics` for a
-narrower type that allows us to remove the "publisher" and "api" prefixes from
-`metrics`.
-
-```go
-metrics := newLambdaMetrics(publisherLambdaARN)
-publisherDashboard := newDashboard(
-    LineGraph{
-        title: "Invocations",
-        period: time.Minute,
-        metric: metrics.invocations,
-        width: 4,
-    },
-    LineGraph{
-        title: "Errors",
-        period: time.Minute,
-        metric: metrics.errors,
-        width: 6,
-    },
-    // ...
-)
-
-metrics = newLambdaMetrics(apiLambdaARN)
-apiDashboard := newDashboard("API", 
-    LineGraph{
-        title: "Invocations",
-        period: time.Second,
-        metric: metrics.invocations,
-        width: 3,
-    },
-    LineGraph{
-        title: "Errors",
-        period: time.Second,
-        metric: metrics.errors,
-        width: 3,
-    },
-    // ...
-)
 ```
 
 ## Optimize for clarity at the call site
