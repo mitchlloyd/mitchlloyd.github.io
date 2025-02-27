@@ -49,4 +49,24 @@
     font-style: italic;
     color: $grey-color;
   }
+
+  .promo {
+    margin-top: $spacing-unit;
+    padding: $spacing-unit;
+    color: white;
+    background: linear-gradient(135deg, #001D7D 0%, #1942ca 100%);
+    border-radius: 0.25rem;
+    font-size: 1.125rem;
+
+    a {
+      color: #f16cbe;
+      text-decoration: none;
+      position: relative;
+      z-index: 2;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }

@@ -35,13 +35,17 @@
   list-style: none;
 }
 
-// `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+// `.(m|p)(t|r|b|l|h|v|a)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical/all less/more/none
 .mr- {
   margin-right: $spacing-unit / 2;
 }
 
 .mb {
   margin-bottom: $spacing-unit;
+}
+
+.pa {
+  padding: $spacing-unit;
 }
 
 .mb\+ {
